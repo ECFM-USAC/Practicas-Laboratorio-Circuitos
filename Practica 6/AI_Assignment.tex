@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 12 pt, conference]{ieeeconf}  % Comment this line out
+                                                          % if you need a4paper
+%\documentclass[a4paper, 12pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
+
+\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+\overrideIEEEmargins
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+
+\title{\LARGE \bf
+Práctica 6: dispositivos varios 
+}
+
+%\author{ \parbox{3 in}{\centering Narshion Ngao*
+%         \thanks{*Use the $\backslash$thanks command to put information here}\\
+%         Msc. Computer Systems - 2018\\
+%         Jomo Kenyatta University of Agriculture \& Technology \\
+%       
+%}}
+
+\author{Universidad de San Carlos de Guatemala \\% <-this % stops a space
+Escuela de Ciencias Físicas y Matemáticas\\
+Laboratorio de Circuitos\\
+Segundo Semestre 2019
+}
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\section{Objetivos}
+\begin{itemize}
+    \item General: experimentar con el uso de dispositivos básicos de utilidad en electrónica y electricidad.
+    \item Específicos:
+    \begin{enumerate}
+    \item Ejercitar habilidades de diseño de circuitos para solución de problemas específicos.
+    \item Explorar el uso de optoacopladores para control de circuitos con mayor consumo de corriente.
+    \item Comprobar el uso de relés como segundo método de control de acoples eléctricos.
+    \item Practicar el diseño fundamental de galvanómetros como voltímetros analógicos básicos.
+\end{enumerate}
+\end{itemize}
+
+
+\section{Materiales}
+\begin{itemize}
+    \item 1 relé SPST 5V.
+    \item 1 botón NC para protoboard.
+    \item 1 botón NA para protoboard.
+    \item 1 optoacoplador 4n25.
+    \item 1 batería AA con adaptador o fuente 3.3V.
+    \item 1 ventilador DC 12V.
+    \item 1 LED RGB.
+    \item 1 resistencia ohm 1/4W.
+    \item 1 fuente 5V y 12V.
+    \item 1 protoboard.
+    \item Alambre para protoboard.
+    \item 1 galvanómetro 10V o 30V escala máxima.
+    \item 1 potenciómetro de precisión 200 ohms o resistencia de precisión.
+\end{itemize}
+\pagebreak
+
+\section{Procedimiento y reporte de resultados}
+Seguir todos los pasos que a continuación se enlistan. Al terminar de armar cada circuito, pedir la evaluación con lista de cotejo.
+
+\begin{enumerate}
+    \item Conectar el ventilador a una fuente de voltaje 3.3V y luego con una de 12V. Observar lo que sucede.
+    \item Con un optoacoplador diseñar un circuito capaz de encender el ventilador eficientemente cuando se tenga en la entrada un pulso de botón de 3.3V.
+    \item Diseñar un circuito que cumpla las siguientes especificaciones.
+        \begin{itemize}
+            \item La salida normal del circuito debe ser una luz roja.
+            \item Al presionar un botón, esta debe cambiar a verde.
+            \item Si se presiona un segundo botón, el color rojo debe cambiar a magenta y el verde a cyan.
+        \end{itemize}
+    \item En los grupos asignados para proyecto, hacer las modificaciones necesarias para cambiar la escala del galvanómetro a 5V máximo. Mostrar el producto final en la siguiente clase.
+\end{enumerate}
+
+
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+\end{document}
